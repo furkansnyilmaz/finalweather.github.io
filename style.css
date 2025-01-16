@@ -1,0 +1,608 @@
+:root{
+    --background-color: #A9D6E5;
+    --topbar-color: #468FAF;
+    --topbar-hover: #2C7DA0;
+    --topbar-active: #2A6F97;
+    --bottom-bar : #61A5C2;
+    --text-color: white;
+    --text-color-darker: #d0d0d0;
+
+    --font-all:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+    z-index: 990;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.ustbar{
+    background-color: var(--topbar-color);
+    overflow: hidden;
+    min-width: 720px;
+    width: 100%;
+}
+
+.ustbar a{
+    color: var(--text-color);
+    font-family: var(--font-all);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:14px;
+}
+
+.ustbar a#menu{
+    float:left;
+}
+
+.ustbar a#home{
+    float:left;
+}
+
+.ustbar a#settings{
+    float:right;
+}
+
+.ustbar a#about{
+    float:right;
+}
+
+.ustbar a:hover{
+    background-color: var(--topbar-hover);
+    color:var(--text-color);
+    border-radius: 14px;
+}
+
+.ustbar a.active1{
+    background-color: var(--topbar-active);
+    color:var(--text-color);
+    border-radius: 14px;
+}
+
+.ustbar input[type=search] {
+    background-color: var(--topbar-active);
+    color: var(--text-color);
+    text-decoration: none;
+    outline: none;
+    width: 20%;
+    min-width: 200px;
+    float: left;
+    padding: 7px;
+    padding-left: 22px;
+    border: 3px solid var(--topbar-active);
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+    margin-top: 4px;
+    margin-left: 27%;
+    font-size: 17px;
+}
+.ustbar input[type=search]:focus {
+    background-color: var(--topbar-active);
+    color: var(--text-color);
+
+    text-decoration: none;
+    outline: none;
+    width: 20%;
+    float: left;
+    padding: 7px;
+    padding-left: 22px;
+    border: 3px solid #5ea7e3;
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+    margin-top: 4px;
+    margin-left: 27%;
+    font-size: 17px;
+}
+
+.ustbar button[type=button]{
+    background-color: #215778;
+    width: 42px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 39px;
+    margin-top: 4px;
+    border: none;
+}
+
+.ustbar button[type=button]:hover{
+    background-color: #1c4c67;
+    width: 42px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 39px;
+    margin-top: 4px;
+    border: none;
+}
+
+.ustbar button[type=button]:focus{
+    background-color: #123c50;
+    width: 42px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 39px;
+    margin-top: 4px;
+    border: none;
+}
+
+.altbar {
+    width: 65%;
+    height: 580px;
+    min-width: 690px;
+    border-radius: 14px;
+    align-self: center;
+    padding: 25px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infobar {
+    background-color: var(--bottom-bar);
+    width: 90%;
+    height: 90%;
+    float:left;
+    border-radius: 14px;
+    padding: 30px 30px;
+    position: relative;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 25px;
+}
+
+.solbar {
+    background-color: var(--bottom-bar);
+    width: 56%;
+    height: 95%;
+    float:left;
+    border-radius: 14px;
+    padding: 16px 16px;
+    position: relative;
+}
+
+.solbar #solbar-image{
+    width:125px;
+    height:125px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.solbar #solbar-sehir {
+    color:var(--text-color);
+    font-family: var(--font-all);
+    margin-top: 5px;
+    margin-left: 150px;
+    font-size: 36px;
+    position: absolute;
+}
+
+.solbar #solbar-derece{
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 48px;
+    margin-top: 75px;
+    margin-left: 200px;
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+}
+
+.solbar #solbar-havadurumu{
+    color: var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 16px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 47px;
+}
+
+.solbar #solbar-airpressure-all{
+    width:200px;
+    height:75px;
+    position:absolute;
+    margin-top: 240px;
+    margin-left: 20px;
+}
+
+.solbar #solbar-airpressure-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+}
+
+.solbar #solbar-airpressure-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-airpressure-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.solbar #solbar-hissicak-all{
+    width:150px;
+    height:75px;
+    position:absolute;
+    margin-top: 240px;
+    right:20px;
+}
+
+.solbar #solbar-hissicak-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+}
+
+.solbar #solbar-hissicak-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-hissicak-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.solbar #solbar-nem-all{
+    width:150px;
+    height:75px;
+    position:absolute;
+    margin-top: 320px;
+    margin-left: 20px;
+}
+
+.solbar #solbar-nem-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+}
+
+.solbar #solbar-nem-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-nem-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+.solbar #solbar-uv-all{
+    width:150px;
+    height:75px;
+    position:absolute;
+    margin-top: 320px;
+    right:20px;
+}
+
+.solbar #solbar-uv-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+}
+
+.solbar #solbar-uv-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-uv-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+.solbar #solbar-vis-all{
+    width:150px;
+    height:75px;
+    position:absolute;
+    margin-top: 400px;
+    right: 20px;
+}
+
+.solbar #solbar-vis-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+}
+
+.solbar #solbar-vis-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-vis-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.solbar #solbar-wind-all{
+    width:150px;
+    height:75px;
+    position:absolute;
+    margin-top: 400px;
+    margin-left: 20px;
+}
+
+.solbar #solbar-wind-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+}
+
+.solbar #solbar-wind-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-wind-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.solbar #solbar-winddir-all{
+    width:150px;
+    height:75px;
+    position:absolute;
+    margin-top: 480px;
+    margin-left: 20px;
+}
+
+.solbar #solbar-winddir-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+}
+
+.solbar #solbar-winddir-txt {
+    margin-left: 13px;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-all);
+    font-size: 12px;
+    right: 0;
+    font-weight: bold;
+}
+
+.solbar #solbar-winddir-value{
+    float:left;
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.sagbar {
+
+    width: 35%;
+    height: 100%;
+    float: right;
+    border-radius: 14px;
+    overflow: auto;
+}
+
+.sbclass{
+    background-color: var(--bottom-bar);
+    border-radius: 14px;
+    width: 85%;
+    height: 12%;
+    margin-bottom: 25px;
+    padding: 16px 16px;
+    position: relative;
+}
+
+.sbclass:hover{
+    background-color: var(--topbar-hover);
+    color:var(--text-color);
+    border-radius: 14px;
+}
+
+.active{
+    background-color: var(--topbar-active);
+}
+
+.sbimage{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.sbsehir{
+    color:var(--text-color);
+    font-family: var(--font-all);
+    margin-top: 2px;
+    margin-left: 85px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.sbderece{
+    color:var(--text-color);
+    font-family: var(--font-all);
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.sbhavadurumu{
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    margin-top: 25px;
+    margin-left: 85px;
+    font-size: 12px;
+    position: absolute;
+}
+
+.sbikon{
+    all: unset;
+    color: var(--text-color);
+    float: right;
+
+}
+.sbikon:hover{
+    all: unset;
+    color: black;
+    float: right;
+
+}
+
+.aramasonuclar{
+    z-index: 998;
+}
+
+#arama_sonuc{
+    z-index: 999;
+    background-color: var(--bottom-bar);
+    border-radius: 14px;
+    width: 20%;
+    min-width: 200px;
+    height: 10%;
+    margin-bottom: 25px;
+    padding: 16px 16px;
+    position: absolute;
+    margin-left: calc(140px + 27%);
+    margin-top: 53px;
+}
+
+#arama_image {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+#arama_sehir{
+    color:var(--text-color);
+    font-family: var(--font-all);
+    margin-top: 2px;
+    margin-left: 85px;
+    font-size: 20px;
+    position: absolute;
+}
+
+#arama_derece{
+    color:var(--text-color);
+    font-family: var(--font-all);
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#arama_havadurumu{
+    color:var(--text-color-darker);
+    font-family: var(--font-all);
+    margin-top: 25px;
+    margin-left: 85px;
+    font-size: 12px;
+    position: absolute;
+}
+
+#arama_ikon{
+    all: unset;
+    color: var(--text-color);
+    float: right;
+    pointer-events: auto;
+}
+#arama_ikon:hover{
+    all: unset;
+    color: black;
+    float: right;
+    pointer-events: auto;
+}
+
+.overlay{
+    z-index: 997;
+    position: absolute;
+    width: 100%;
+    min-width: 720px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.overlay #transparent_background{
+    position: absolute;
+    min-width: 720px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    pointer-events: auto;
+    margin-top: 47px;
+}
